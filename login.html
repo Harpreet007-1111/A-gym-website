@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>THE ROCK GYM</title>
+<link rel="stylesheet" href="sheet.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body style="background-color: #34495e;">
+
+<header id="myHeader">
+<nav id="myNav" style="background-color: black!important"> 
+  <a href="home.html;" class="selected">Home</a>
+  <a href="about.html">About</a>
+  <a href="philosophy.html">philosophy</a>
+  <a href="trainingProgram.html">Training Programs</a>
+  <a href="login.html">Login</a>
+</nav>
+</header>
+  <main id="main">
+
+    <h5 style="text-align: center; padding: 10px; margin: 10px; color: white !important;">THE ROCK GYM | THE LOGIN  PAGE</h5>
+    
+  <form class="login" name="login" onsubmit="return validateForm()" action="index.html" method="post" required>
+    <h1>LOGIN PAGE</h1>
+        
+    <input type="email" name="email" id ="email" placeholder="Enter Your Email." required>
+        
+    <input type="password" id="password" name="password" placeholder="Enter Your password." pattern="(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+        
+<input type="checkbox" class="checkbox" onclick="myFunction()">
+      <p>show password</p> 
+    
+    <input type="submit" value="LOGIN" onclick="validateForm()" >
+        
+      </form>
+    <div id="message">
+      <h2>Password must contain the following: </h2>
+      
+      <p id="letter" class="invalid">A <b>Lowercase</b> letter.</p>
+      
+      <p id="capital" class="invalid">A <b>capital (Uppercase)</b> letter</p>
+      
+      <p id="number" class="invalid">A <b> number</b></p>
+      
+      <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+      
+      </div>
+  </main>
+<hr>
+  <footer id="myFooter" style="bottom: 0px; position: fixed;">
+    <div class="social">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-youtube"></i></a>
+      <p>&copy; Created by Harpreet Jassy, Approved by Raghuveer Virk.</p>
+    </div>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,377 @@
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;;}
+    .col-12 {width: 100%;}
+  }
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#myNav {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    background: blue;
+    right: 0px;
+    top: 0px;
+    z-index: 1;
+}
+
+#myNav a {
+    display: inline-block;
+    margin-top: 1%;
+    padding: 15px 16px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+} 
+
+#myNav a:hover {
+    background-color: green;
+    color: yellow;
+    font-weight: 300px;
+}
+
+.selected {
+    background-color: #131313;
+}
+
+#myNav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    #myNav a:not(:first-child) {display: none;}
+    #myNav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #myNav.responsive {position: relative;}
+    #myNav.responsive .icon {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+    #myNav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+/* starting of home page*/
+
+.home-content  {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.home-content h1 {
+    font-size: 40px;
+    font-weight: bolder;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+.home-content p {
+    font-size: 30px;
+}
+
+
+/* styles for the Login page */
+
+.login{
+    width:300px;
+    padding:30px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    background:#131313;
+    text-align:center;
+    transform:translate(-50%, -50%);
+  }
+  .login h1{
+    font-size:25px;
+    font-weight:600px;
+    color:white;
+  }
+  .login input[type="email"], .login input[type="password"]{
+    display:block;
+    transition:0.25s;
+    background:none;
+    color:white;
+    width:200px;
+    margin:20px auto;
+    text-align:center;
+    outline:none;
+    border:5px solid #3498db;
+    border-radius:24px;
+    padding:14px 10px;
+  }
+  .login input[type="email"]:focus, .login input[type="password"]:focus{
+    width:90%;
+    border-color:green;
+  }
+  .login input[type="submit"]{
+    display:block;
+    transition:0.25s;
+    background:none;
+    color:white;
+    width:200px;
+    margin:20px auto;
+    text-align:center;
+    outline:none;
+    border:5px solid #2ecc71;
+    border-radius:24px;
+    padding:14px 40px;
+    cursor:pointer;
+  }
+  .login input[type="submit"]:hover{
+    background:#2ecc71;
+  }
+  .checkbox{
+    position:absolute;
+    display:block;
+    left:20%;
+    margin:10px;
+    }
+  p{
+    color:white;
+  }
+  #message {
+    display:none;
+    background:#f1f1f1;
+    color:#000;
+    position:relative;
+    padding:20px;
+    margin-top:10px;
+  }
+  #message p {
+    padding: 10px 35px;
+    font-size: 18px;
+  }
+
+  /* code for philosophy file*/
+
+.my-container {
+    font-size: 20px;
+    position: absolute;
+    grid-row: auto;
+    display: grid;
+    margin-top: auto;
+    padding-top: auto;
+}
+
+.my-container h1 {
+    display: grid;
+    grid-row: auto;
+    background-color: navy;
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+    position: relative;
+}
+
+.my-container p {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    font-size: 25px;
+}
+
+.the-rock .pic1 .pic2 img {
+    float: left;
+    justify-content: center;
+}
+
+#myFooter {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    left: 0px;
+    width: 100%;
+    background-color: blue;
+    text-align: center;
+}
+
+.social i {
+    color: white;
+    padding: 10px;
+    margin-top: 0px;
+    font-size: 35px;
+}
+
+/* End of philosophy styles */
+
+/* start of Training program styles */
+
+.ToC {
+    width: 45vh;
+    margin: 10px;
+    padding: 10px;
+    background-color: forestgreen;
+
+}
+
+.ToC a {
+    position: relative;
+    display: block;
+    font-size: 20px;
+    left: 20%;
+    text-decoration: underline;
+    color: white;
+}
+
+.ToC a:hover {
+    color: blue;
+}
+
+#program {
+    display: block;
+    padding: 10px;
+    margin: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#program h1 {
+    text-align: center;
+    text-decoration: underline;
+    color: yellow;
+    background-color: blue;
+    margin: 8px;
+    padding: 10px;
+}
+
+#program h3 {
+    padding: 10px;
+    margin: 8px;
+    text-align: center;
+}
+
+#program h2 {
+    text-decoration: underline;
+    font-weight: 500;
+    color: yellow;
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+}
+
+#program p {
+    background-color: blue;
+    padding: 12px;
+    margin: 20px;
+    font-size: 25px;
+    text-align: justify;
+}
+
+#program p a {
+    color: yellow;
+}
+
+#program ul li {
+    list-style-type: symbols();
+    list-style-position: inside;
+    font-size: 22px;
+    color: yellow;
+    padding: 10px;
+    margin: 10px 10px 10px 10px;
+}
+
+#program ol li {
+    list-style-position: inside;
+    color: yellow;
+    padding: 5px;
+    margin: 10px;
+    font-size: 22px;
+}
+
+/* end of training styles */
+
+/* start of about styles */
+
+#intro h2 {
+    text-align: center;
+    font-weight: 500;
+    color: blue;
+    background-color: yellow;
+    padding: 10px;
+    margin: 10px;
+}
+
+#intro p {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: justify;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    margin-bottom: 16px;
+    padding: 0px 8px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+}
+
+.about-section {
+    padding: 50px;
+    text-align: center;
+    background: black;
+    color: white;
+}
+
+.container {
+    padding: 0 16px;
+}
+
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: blue;
+    padding: 5px;
+}
+
+.email {
+    color: blue;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }

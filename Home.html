@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THE ROCK GYM</title>
+  <link rel="stylesheet" href="sheet.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body style="background-image: url(backImg.jpg); height: auto; width: 100%;">
+  
+  <header id="myHeader">
+    <nav id="myNav" class="topnav" style="background-color: transparent;"> 
+      <a href="home.html" class="selected">Home</a>
+      <a href="about.html">About</a>
+      <a href="philosophy.html">philosophy</a>
+      <a href="trainingProgram.html">Training Programs</a>
+      <a href="login.html">Login</a>
+     <a href="javascript:void(0);" class="icon" onclick="myBars()"></a>
+    </nav>
+
+    <div w3-include-html="header.html" ></div>
+
+   </header><br>
+  <br>
+
+  <main>
+    <h5 style="text-align: center; padding: 10px; margin: 10px; color: white !important;">THE ROCK GYM | HOME PAGE</h5>
+    <div class="home-content">
+      <h1>welcome</h1>
+      <p>WE AMPLIFY HUMAN PERFORMANCE! <br> WHAT HURTS TODAY WILL MAKE YOU STONG TOMORROW.</p>
+    </div>
+  </main>
+
+  <footer id="myFooter" style="position: fixed; bottom: 0px; left: 0px; background-color: transparent;">
+    <div class="social">
+      <a href=""><i class="fa fa-facebook"></i></a>
+      <a href=""><i class="fa fa-instagram"></i></a>
+      <a href=""><i class="fa fa-twitter"></i></a>
+      <a href=""><i class="fa fa-youtube"></i></a>
+      <p>&copy; Created by Harpreet Jassy, Approved by Raghuveer Virk.</p>
+    </div>
+  </footer>
+
+  <div w3-include-html="footer.html" ></div>
+
+  <script src="script.js"></script>
+  <script>
+    includeHTML();
+  </script>
+</body>
+</html>
